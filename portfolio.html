@@ -16,7 +16,7 @@
 
 <style>
 div.background {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/road.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/bridge.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
@@ -223,7 +223,7 @@ win.scroll(function(event) {
     var $win = $(window);
 
     $('div.background').each(function(){
-        var scroll_speed = 2;
+        var scroll_speed = 7;
         var $this = $(this);
         $(window).scroll(function() {
             var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
