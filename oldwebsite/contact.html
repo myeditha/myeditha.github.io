@@ -12,6 +12,7 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <style>
@@ -48,7 +49,7 @@ div.background {
 			</div>
         </div>
     </nav>
-	
+
 	<header class = "jumbotron jumbotron-1">
 		<div class ="container">
 			<p style = "padding:10px;"></p>
@@ -69,7 +70,7 @@ div.background {
 
 		</div>
 	</header>
-	
+
 	<div id = "blog" class = "jumbotron jumbotron-2" style = "height:100vh;">
 		<div class = "container mycon2">
 			<h1 style = "padding-top:75px; padding-bottom:50px;"class = "module">The Latest</h1>
@@ -80,7 +81,7 @@ div.background {
 			<h2 class = "module" ><a>Read more</a></h2>
 		</div>
 	</div>
-	
+
 	<footer class = "row-footer jumbotron">
 		<div class = "container">
 			<div class = "row-content">
@@ -96,7 +97,7 @@ div.background {
 		</div>
 	</footer>
 	</div>
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>
@@ -129,7 +130,7 @@ div.background {
    */
 
   $.fn.visible = function(partial) {
-    
+
       var $t            = $(this),
           $w            = $(window),
           viewTop       = $w.scrollTop(),
@@ -138,11 +139,11 @@ div.background {
           _bottom       = _top + $t.height(),
           compareTop    = partial === true ? _bottom : _top,
           compareBottom = partial === true ? _top : _bottom;
-    
+
     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
   };
-    
+
 })(jQuery);
 
 var win = $(window);
@@ -152,19 +153,19 @@ var allMods = $(".module");
 allMods.each(function(i, el) {
   var el = $(el);
   if (el.visible(true)) {
-    el.addClass("already-visible"); 
-  } 
+    el.addClass("already-visible");
+  }
 });
 
 win.scroll(function(event) {
-  
+
   allMods.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } 
+      el.addClass("come-in");
+    }
   });
-  
+
 });
 
   </script>

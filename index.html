@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id = "home">
 
 <head>
 	<meta charset="utf-8">
@@ -11,93 +11,264 @@
 	<link href="css/mystyles.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 </head>
 
 <body>
-	<div class = "background">
-	<!--Still have problems with the navbar. Come back to this later. -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-			<div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+	<div id = "stickyheader" class = "navbar">
+		<ul>
 
-            </div>
-			<div id = "navbar" class = "navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html" class = "active" >Home</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#blog">Blog</a></li>
+			<li class = "active"><a href = "index.html#home">Home</a></li>
+			<li style = "display:none;" id = "coder1"><a href = "index.html#about">About</a></li>
+			<li style = "display:none;" id = "coder2"><a href = "index.html#portfolio">Portfolio</a></li>
+			<li style = "display:none;" id = "musician1"><a href = "index.html#about">Current Music</a></li>
+			<li style = "display:none;" id = "musician2"><a href = "index.html#portfolio">Deewane</a></li>
+			<li><a href = "index.html#blog">Contact</a></li>
+		</ul>
+	</div>
 
-				</ul>
-			</div>
-        </div>
-    </nav>
-	
-	<header class = "jumbotron jumbotron-1">
-		<div class ="container">
-			<p style = "padding:10px;"></p>
-			<div class = "row rowbl">
-				<div class = "col-xs-12">
-					<h1>MEHERESH S YEDITHA</h1>
-				</div>
-			</div>
-			<div class = "row rowbl">
-				<div class = "col-xs-12">
-					<h1>CODING AND PROJECT BLOG</h1>
-				</div>
-			</div>
-						<p style = "padding:255px;"></p>
+<div class = "bodywrapper">
 
-			<h2><a href = "portfolio.html">Coder</a> • <a> Musician</a> • <a href = "about.html">Innovator</a></h2>
-			<p style = "padding:50px;"/>
+	<header>
+		<div style = "min-height: 100vh;">
+			<p style = "padding:2vh;"></p>
+			<h1>Meheresh Yeditha</h1>
+			<h2>Coding & Project Blog</h2>
+			
+			<div style = "text-align:center;">
+				<img class = "img-circle" src = "img/bg.png" width = 30% height = 0%>
+			</div>
+			<div id = "blog" class = "choice">
+			<h2><a href = "#coder" onclick = "toggledivs('coder');return false;">Coder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;"> Musician</a> • <a href = "#philosophile" onclick = "toggledivs('philosophile');return false;">Philosophile</a></h2>
+			</div>
 
 		</div>
 	</header>
-	
-	<div id = "blog" class = "jumbotron jumbotron-2" style = "min-height:100vh;">
+	<div id = "coder" style = "display:none;">
+		<div style = "min-height:100vh; padding-top:40px;">
+			<div>
+				<h1 style = "padding-bottom:25px;">Welcome!</h1>
+				<h3>My name is Meheresh Yeditha, and I am a sophomore at the Carnegie Mellon School of Computer Science. I work as a teaching assistant for Principles of Functional Programming (15-150) and my interests include algorithm development, language processing, and design. </h3>
+				<h3>On this page you'll find everything from descriptions of cool upcoming projects to past jobs and internship experiences. If you have any questions, feel free to <a href = "index.html#contact">contact</a> me!</h3>
+				<!-- <h3>P.S. If you're interested in non-coding stuff about me, click <strong><a href = "otherstuff.html">here</a></strong></h3> -->
+			</div>
+		</div>
+
+				<h1 style = "padding-top:75px; padding-bottom:50px;text-align:center;">Education</h1>
+			<div id = "about" class = "circlist">
+				<br>
+				<h3>
+				<li>
+				<img src = "img/academy.png"> 
+	   			<h3>Academy for Mathematics, Science and Engineering Class of 2015</h3>
+	    </li>
+
+	    <li>
+	    	<img src = "img/cmusmall.png">
+	    	<h3>
+	        Carnegie Mellon University School of Computer Science Class of 2019</h3>
+	    </li>
+				<li>
+					<img src = "img/150.png">
+					<h3>
+				Teaching Assistant, 15-150<br>Fall 2016<br>Spring 2017
+					</h3>
+				</li>
+				<li>
+					<img src = "img/lti.png">
+					<h3>
+				Research Assistant, Language Technologies Institute<br>Spring 2017
+					</h3>
+				</li>
+				</h3>
+		</div>
+
+		<h1 style = "padding-top:75px; padding-bottom:50px;">Experience</h1>
+		<div id = "experience" class = "circlist">
+				<br>
+				<h3>
+			<li><img src = "img/paloalto.png"><h3>Software Engineering Intern, Palo Alto Networks | May 2017 - August 2017</h3>
+	    </li>
+			<li><img src = "img/parsegon.jpg"><h3>Software Engineering Intern, Parsegon | July 2016 - August 2016</h3>
+	    </li>
+	    <li><img src = "img/climatemedia.png"><h3>Web Developer, Climate Media | June 2016 - July 2016</h3>
+	    </li>
+	    <li><img src = "img/gigstreaminverted.png"><h3>Web Developer, Gigstream | June 2016 - September 2016</h3>
+	    </li>
+	    <li><img src = "img/ardec.png"><h3>Software Development Intern, Picatinny Arsenal | March 2015 - June 2015</h3>
+	    </li>
+	    <li><img src = "img/npd.png"><h3>Intern, LGI Network (An NPD Company) | July 2014 - August 2014</h3>
+	    </li>
+		</h3>
+		</div>
+
+		<h1 style = "padding-top:75px; padding-bottom:50px;"class = "module">Merits</h1>
+		<div id = "merits">
+				<br>
+				<h3 class = "module"> <li>Dean's List, School of Computer Science, Spring 2016, Fall 2016
+	    </li><li>Outstanding mention with team at Virtual Enterprises Trade Show New York
+	    </li>
+
+	    <li>6-Time JSA Best Speaker
+	    </li>
+
+	    <li>3rd Degree Black Belt, Tae Kwon Do
+	    </li>
+
+	    <li>Senate President, Party Leader of New Jersey Model Congress
+	    </li>
+
+	    <li>Honorable Mention Toshiba Exploravision Competition
+	    </li>
+
+	    <li>National Merit Finalist
+	    </li>
+
+	    <li>National AP Scholar
+	    </li>
+
+	    <li>Certificate of Distinction, Continental Math League
+	    </li>
+		</h3>
+		</div>
+
+		<div id = "portfolio" class = "jumbotron jumbotron-2">
+
+
+	<div id = "previous" class = "jumbotron jumbotron-2" style = "padding-bottom:20vh;">
 		<div class = "container mycon2">
-			<h1 style = "padding-top:75px; padding-bottom:50px;"class = "module">The Latest</h1>
+			<div class = "row">
+			<h1 style = "padding-top:75px; padding-bottom:50px;"> Projects</h1>
 			<br>
-			<h3 class = "module">Welcome to my new website! Here you'll find information about me, some past technical projects, and updateson upcoming technical projects. Note that most of this website is still under construction, so some links will not work/some information will be updated in the coming weeks. If you have any questions, please contact me at itsmyne999@gmail.com or via my LinkedIn or Facebook (see footer)</h3>
-			<p class = "module"></p>
-			<p style = "padding:50px;"></p>
-			<h2 class = "module" ><a href = "about.html">Read more</a></h2>
+			<h3>
+			<li>Email Calendar</li>
+			<li>Three Dimensional Terrain Generator</li>
+			<li>Python Biology Game</li>
+			<li>Virtual Machine</li>
+			<li>My Wordpress Theme</li>
+			<li>Editor</li>
+			<li>India Road Mapping Project</li>
+			<li>Course Selection Project</li>
+			<li>Carnegie Mellon Mapping Project</li>
+			</h3>
+			</div>
 		</div>
 	</div>
-	
-	<footer class = "row-footer jumbotron" style = "padding-top:20px;">
-		<div class = "container">
-			<div class = "row-content">
-				<div class="col-xs-12 col-sm-4">
-                    <a href = "mailto:itsmyne999@gmail.com"><h4>Email</h4></a>
-                </div>
-				<div class = "col-xs-12 col-sm-3 col-sm-offset-5">
-						<a class="btn" href="http://www.facebook.com/meheresh.yeditha/"><i class="fa fa-facebook fa-2x"></i></a>
-                        <a class="btn" href="http://www.linkedin.com/in/mehereshyeditha"><i class="fa fa-linkedin fa-2x"></i></a>
-				</div>
-				
-			</div>
-			<div class = "row" style = "padding-left:30px;">
-				<h6><a href = "index.html">Home</a></h6>
-			</div>
-			<div class = "row" style = "padding-left:30px;">
-				<h6><a href = "portfolio.html">Portfolio</a></h6>
-			</div>
-			<div class = "row" style = "padding-left:30px;">
-				<h6><a href = "about.html">About</a></h6>
-			</div>
-			
-		</div>
-	</footer>
 	</div>
+		
+	</div>
+
+
+	<div id = "musician" style = "display:none;padding-top:40px;">
+		<div style = "min-height:60vh;">
+			<h1>Hello There!</h1>
+			<h3>Welcome to my landing page for my musical adventures! Music is truly a universal language, and I have enjoyed making and listening to music for as long as I can remember. Here you'll find music reviews, playlists, and links to some good music. Hope you enjoy!</h3>
+		</div>
+		<div  style = "padding-top:75px; padding-bottom:50px; text-align:center">
+			<h1 style = "padding-bottom:50px;">What I'm Listening To Right Now</h1>
+			<img style = "width:300px;" src = "img/sampha.jpg">
+			<h2 style = "padding-top:5vh;padding-bottom:5vh;">Process, Sampha</h2>
+			<h3>You may have never heard of the name, but you'll definitely recognize the voice. London-based singer-songwriter Sampha has made quite the name for himself in the music industry, featuring on tracks with Drake, Frank Ocean, Kanye West, and Solange with his emotive, breathy, gorgeously otherworldly voice. </h3>
+			<div class = "circlist">
+			<h3 style = "padding-bottom:25vh;">But frankly, Process blows all of this illustrious previous work out of the water. A haunting album about grief and loss with heavy influences from James Blake (go figure) and American R&B, Process is a emotional, devastating listen from start to finish, and my top album of 2017 so far.</h3>
+			<li><img src = "img/cmyk.jpg"><h2>CMYK, James Blake</h2><h3>One of Blake's first releases, CMYK is a nifty little mini-album with some stellar dubstep-influenced production and good beats.</h3>
+	    	</li>
+	    	<li><img src = "img/iseeyou.jpg"><h2>I See You, The XX</h2><h3>The XX's latest release, I See You blends the lush beats of Jamie XX's solo work with the raw emotion of the band's previous releases to great results.</h3>
+	    	</li>
+	    	<li><img src = "img/meddle.jpg"><h2>Meddle, Pink Floyd</h2><h3>Pink Floyd's last release before DSOTM, Meddle is an underrated gem punctuated by the epic "Echoes", which stands as one of their best songs.</h3>
+	    	</li>
+	    </div>
+		</div>
+		<div style = "min-height:60vh;padding-top:30vh;">
+			<h1>Deewane</h1>
+			<img width = "100%"src = "img/deewane.jpg">
+			<h3 style = "padding-bottom:100px;">I'm also a part of the a cappella community at Carnegie Mellon, and am part of <a href = "http://www.cmudeewane.com">CMU Deewane</a>, an Indian fusion group. Check out our Facebook page <a href = "https://www.facebook.com/cmudeewane/">here</a>!</h3>
+		</div>
+	</div>
+
+	<div id = "philosophile" style = "display:none;min-height:100vh;padding-top:40px;text-align:center;">
+		<h2 style = "padding-bottom:10vh;">This page is under construction. Come back later for some musings, book recommendations, and more.</h2>
+		<div style = "padding-bottom:20vh;">
+			<img width = "19.5%" src = "img/siddhartha.jpg">
+			<img width = "19.5%" src = "img/godspeaks.jpg">
+			<img width = "19.5%" src = "img/bhagavadgita.jpg">
+			<img width = "19.5%" src = "img/thusspakezarathustra.jpg">
+			<img width = "19.5%" src = "img/thestranger.jpg">
+		</div>
+	</div>
+
 	
+
+</div>
+
+<footer>
+	Website by Meheresh Yeditha
+</footer>
+	<script>
+	function toggledivs(divid) {
+		console.log(divid);
+		var x = document.getElementById(divid);
+		var x1 = document.getElementById(divid + "1");
+		var x2 = document.getElementById(divid + "2");
+		var y;
+		var y1;
+		var y2;
+		var z;
+		var z1;
+		var z2;
+		if(divid=='coder')
+		{
+			y = document.getElementById('musician');
+			y1 = document.getElementById("musician1");
+			y2 = document.getElementById("musician2");
+			z = document.getElementById('philosophile');
+		}
+		else if (divid == 'musician')
+		{
+			y = document.getElementById('coder');
+			y1 = document.getElementById("coder1");
+			y2 = document.getElementById("coder2");
+			z = document.getElementById('philosophile');
+		}
+		else if(divid=='philosophile')
+		{
+			y = document.getElementById('coder');
+			y1 = document.getElementById("coder1");
+			y2 = document.getElementById("coder2");
+			z = document.getElementById('musician');
+			z1 = document.getElementById("musician1");
+			z2 = document.getElementById("musician2");
+		}
+
+	    if (x.style.display === 'none') {
+	        x.style.display = 'block';
+	        if(divid!='philosophile')
+	        {
+		        x1.style.display = 'inline-block';
+		        x2.style.display = 'inline-block';
+	    	}
+	    } else {
+	        x.style.display = 'none';
+	        x1.style.display = 'none';
+	        x2.style.display = 'none';
+	    }
+	    if(y.style.display == 'block')
+	    {
+	    	y.style.display = 'none';
+	    	y1.style.display = 'none';
+	        y2.style.display = 'none';
+	    }
+	    if(z.style.display =='block')
+	    {
+	    	z.style.display = 'none';
+	    	z1.style.display = 'none';
+	        z2.style.display = 'none';
+	    }
+	}
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>
@@ -130,7 +301,7 @@
    */
 
   $.fn.visible = function(partial) {
-    
+
       var $t            = $(this),
           $w            = $(window),
           viewTop       = $w.scrollTop(),
@@ -139,11 +310,11 @@
           _bottom       = _top + $t.height(),
           compareTop    = partial === true ? _bottom : _top,
           compareBottom = partial === true ? _top : _bottom;
-    
+
     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
   };
-    
+
 })(jQuery);
 
 var win = $(window);
@@ -153,19 +324,19 @@ var allMods = $(".module");
 allMods.each(function(i, el) {
   var el = $(el);
   if (el.visible(true)) {
-    el.addClass("already-visible"); 
-  } 
+    el.addClass("already-visible");
+  }
 });
 
 win.scroll(function(event) {
-  
+
   allMods.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } 
+      el.addClass("come-in");
+    }
   });
-  
+
 });
 
   </script>
@@ -183,19 +354,13 @@ win.scroll(function(event) {
         });
     });
 });
+
   </script>
   <script>
-  $(document).ready(function(){
-            $("#artist").hide();
-    $("#artistbens").click(function(){
-	        $("#venue").hide("pulsate");
 
-        $("#artist").show("pulsate");
-    });
-    $("#venuebens").click(function(){
-	        $("#artist").hide("pulsate");
-        $("#venue").show("pulsate");
-    });
-});
+
   </script>
 </body>
+
+
+
