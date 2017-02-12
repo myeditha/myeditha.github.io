@@ -18,11 +18,11 @@
 	<div id = "stickyheader" class = "navbar">
 		<ul>
 
-			<li class = "active"><a href = "index.html#home">Home</a></li>
-			<li style = "display:none;" id = "coder1"><a href = "index.html#about">About</a></li>
-			<li style = "display:none;" id = "coder2"><a href = "index.html#portfolio">Portfolio</a></li>
-			<li style = "display:none;" id = "musician1"><a href = "index.html#currentmusic">Current Music</a></li>
-			<li style = "display:none;" id = "musician2"><a href = "index.html#deewane">Deewane</a></li>
+			<li class = "active"><a href = "#home">Home</a></li>
+			<li style = "display:none;" id = "coder1"><a href = "#about">About</a></li>
+			<li style = "display:none;" id = "coder2"><a href = "#portfolio">Portfolio</a></li>
+			<li style = "display:none;" id = "musician1"><a href = "#currentmusic">Current Music</a></li>
+			<li style = "display:none;" id = "musician2"><a href = "#deewane">Deewane</a></li>
 			<li><a href = "index.html#contact">Contact</a></li>
 		</ul>
 	</div>
@@ -30,16 +30,16 @@
 <div class = "bodywrapper">
 
 	<header>
-		<div style = "min-height: 100vh;">
-			<p style = "padding:2vh;"></p>
+		<div class = "webheader">
+			<p></p>
 			<h1>Meheresh Yeditha</h1>
 			<h2>Coding & Project Blog</h2>
 			
-			<div style = "text-align:center;">
+			<div>
 				<img class = "img-circle" src = "img/bg.png" width = 30% height = 0%>
 			</div>
 			<div id = "blog" class = "choice">
-			<h2><a href = "#coder" onclick = "toggledivs('coder');return false;">Coder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;"> Musician</a> • <a href = "#philosophile" onclick = "toggledivs('philosophile');return false;">Philosophile</a></h2>
+			<h2><a href = "#coder" onclick = "toggledivs('coder');return false;">Coder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;"> Musician</a> • <a href = "#sophophile" onclick = "toggledivs('sophophile');return false;">Sophophile</a></h2>
 			</div>
 
 		</div>
@@ -169,8 +169,8 @@
 			<img style = "width:300px;" src = "img/sampha.jpg">
 			<h2 style = "padding-top:5vh;padding-bottom:5vh;">Process, Sampha</h2>
 			<h3>You may have never heard of the name, but you'll definitely recognize the voice. London-based singer-songwriter Sampha has made quite the name for himself in the music industry, featuring on tracks with Drake, Frank Ocean, Kanye West, and Solange with his emotive, breathy, gorgeously otherworldly voice. </h3>
-			<div class = "circlist">
 			<h3 style = "padding-bottom:25vh;">But frankly, Process blows all of this illustrious previous work out of the water. A haunting album about grief and loss with heavy influences from James Blake (go figure) and American R&B, Process is a emotional, devastating listen from start to finish, and my top album of 2017 so far.</h3>
+						<div class = "circlist">
 			<li><img src = "img/cmyk.jpg"><h2>CMYK, James Blake</h2><h3>One of Blake's first releases, CMYK is a nifty little mini-album with some stellar dubstep-influenced production and good beats.</h3>
 	    	</li>
 	    	<li><img src = "img/iseeyou.jpg"><h2>I See You, The XX</h2><h3>The XX's latest release, I See You blends the lush beats of Jamie XX's solo work with the raw emotion of the band's previous releases to great results.</h3>
@@ -186,7 +186,7 @@
 		</div>
 	</div>
 
-	<div id = "philosophile" style = "display:none;min-height:100vh;padding-top:40px;text-align:center;">
+	<div id = "sophophile" style = "display:none;min-height:100vh;padding-top:40px;text-align:center;">
 		<h2 style = "padding-bottom:10vh;">This page is under construction. Come back later for some musings, book recommendations, and more.</h2>
 		<div style = "padding-bottom:20vh;">
 			<img width = "19.5%" src = "img/siddhartha.jpg">
@@ -221,16 +221,16 @@
 			y = document.getElementById('musician');
 			y1 = document.getElementById("musician1");
 			y2 = document.getElementById("musician2");
-			z = document.getElementById('philosophile');
+			z = document.getElementById('sophophile');
 		}
 		else if (divid == 'musician')
 		{
 			y = document.getElementById('coder');
 			y1 = document.getElementById("coder1");
 			y2 = document.getElementById("coder2");
-			z = document.getElementById('philosophile');
+			z = document.getElementById('sophophile');
 		}
-		else if(divid=='philosophile')
+		else if(divid=='sophophile')
 		{
 			y = document.getElementById('coder');
 			y1 = document.getElementById("coder1");
@@ -242,7 +242,7 @@
 
 	    if (x.style.display === 'none') {
 	        x.style.display = 'block';
-	        if(divid!='philosophile')
+	        if(divid!='sophophile')
 	        {
 		        x1.style.display = 'inline-block';
 		        x2.style.display = 'inline-block';

@@ -24,7 +24,7 @@ img {
 }
 
 .bodywrapper a {
-    animation: pulse 2s infinite;
+    animation: pulse 1.5s infinite;
 }
 
 div.navbar {
@@ -81,6 +81,15 @@ body{
     max-width: 60%;
 }
 
+.webheader {
+    min-height: 100vh;
+    text-align:center;
+}
+
+.webheader p {
+    padding:2vh;
+}
+
 li {
     text-align: left;
 }
@@ -89,10 +98,6 @@ h1 {
     text-align: center;
     font-weight: lighter;
     font-size: 40px;
-/*
-   font-size: 40px;
-   text-align:center;
-*/
 }
 
 h2{
@@ -118,13 +123,6 @@ header {
   transition-timing-function: linear;
     border-radius: 50%;
 }
-
-/*.img-circle:hover{
-
-    background: url("RickRoss.jpg") no-repeat;
-        border-radius: 50%;
-
-}*/
 
 
 div.circlist img {
@@ -181,6 +179,55 @@ footer {
     margin: 0 auto;
 
 }
+
+@media screen and (max-width:520px) {
+    .bodywrapper {
+        max-width:80%;
+    }
+
+
+    div.circlist li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+        div.circlist {
+        padding-left: 0%;
+        width:80%;
+        text-align:center;
+        margin: 0 auto;
+    }
+    div.webheader img {
+        width:70%;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width: 520px) {
+
+
+    div.circlist li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+        div.circlist {
+        padding-left: 0%;
+        width:65%;
+        text-align:center;
+        margin: 0 auto;
+    }
+    div.webheader img {
+        width:60%;
+    }
+
+}
+
 
 @keyframes pulse {
     0%,100%{
