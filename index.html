@@ -34,9 +34,9 @@
 			<p></p>
 			<h1>Meheresh Yeditha</h1>
 			<h2>Coding & Project Blog</h2>
-			
+
 			<div>
-				<img class = "img-circle" src = "img/bg.png" width = 30% height = 0%>
+				<img class = "img-circle" src = "img/bg.jpg" width = 30% height = 0%>
 			</div>
 			<div id = "blog" class = "choice">
 			<h2><a href = "#coder" onclick = "toggledivs('coder');return false;">Coder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;"> Musician</a> • <a href = "#sophophile" onclick = "toggledivs('sophophile');return false;">Sophophile</a></h2>
@@ -59,7 +59,7 @@
 				<br>
 				<h3>
 				<li>
-				<img src = "img/academy.png"> 
+				<img src = "img/academy.png">
 	   			<h3>Academy for Mathematics, Science and Engineering Class of 2015</h3>
 	    </li>
 
@@ -155,7 +155,7 @@
 		</div>
 	</div>
 	</div>
-		
+
 	</div>
 
 
@@ -197,7 +197,7 @@
 		</div>
 	</div>
 
-	
+
 
 </div>
 
@@ -283,60 +283,7 @@
       }
     });
   });</script>
-  <script>
-  (function($) {
 
-  /**
-   * Copyright 2012, Digital Fusion
-   * Licensed under the MIT license.
-   * http://teamdf.com/jquery-plugins/license/
-   *
-   * @author Sam Sehnert
-   * @desc A small plugin that checks whether elements are within
-   *     the user visible viewport of a web browser.
-   *     only accounts for vertical position, not horizontal.
-   */
-
-  $.fn.visible = function(partial) {
-
-      var $t            = $(this),
-          $w            = $(window),
-          viewTop       = $w.scrollTop(),
-          viewBottom    = viewTop + $w.height(),
-          _top          = $t.offset().top,
-          _bottom       = _top + $t.height(),
-          compareTop    = partial === true ? _bottom : _top,
-          compareBottom = partial === true ? _top : _bottom;
-
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-  };
-
-})(jQuery);
-
-var win = $(window);
-
-var allMods = $(".module");
-
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
-
-win.scroll(function(event) {
-
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-  });
-
-});
-
-  </script>
   <script>
   $(document).ready(function(){
     var $win = $(window);
