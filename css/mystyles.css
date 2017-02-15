@@ -17,6 +17,16 @@ a.active{
   color: #b3b3b3;
 }
 
+#portfolio li {
+    text-align:center;
+    text-decoration: none;
+        padding-bottom:30px;
+    list-style:none;
+    width:70%;
+    margin: 0 auto;
+    text-justify:auto;
+}
+
 
 img {
     margin-top: 5vh;
