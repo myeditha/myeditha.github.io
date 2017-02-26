@@ -249,3 +249,33 @@ footer {
 
 }
 
+@keyframes pulse1 {
+    0%,100%{
+        color: #000000;
+    }
+    25% {
+        color: #b3b3b3;
+    }
+
+}
+
+@keyframes pulse2 {
+    0%,100%{
+        color: #000000;
+    }
+    50% {
+        color: #b3b3b3;
+    }
+
+}
+
+@keyframes pulse3 {
+    0%,100%{
+        color: #000000;
+    }
+    75% {
+        color: #b3b3b3;
+    }
+
+}
+
