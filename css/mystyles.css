@@ -16,7 +16,7 @@ a {
 a.active{
   color: #b3b3b3;
 }
-
+/*
 #portfolio li {
     text-align:center;
     text-decoration: none;
@@ -27,7 +27,7 @@ a.active{
     text-justify:auto;
 }
 
-
+*/
 img {
     margin-top: 5vh;
     margin-bottom:5vh;
@@ -123,6 +123,43 @@ h3 {
   font-weight: lighter;
 }
 
+#experience h3, #about h3 {
+  padding-bottom:0px;
+  font-size:16px;
+  /*font-weight:normal;*/
+}
+
+#portfolio h3 {
+  font-size:18px;
+  padding-bottom:0px;
+}
+
+div.reglist li {
+    padding-bottom:10px;
+}
+
+/*div.reglist h3, div.reglist h4, div.reglist h5 {
+  text-align:left;
+}*/
+
+h4 {
+  /*margin-top:4px;*/
+  font-size:14px;
+  font-weight:lighter;
+  text-align:center;
+  color: #7f7f7f;
+  text-transform: uppercase;
+ /* margin-bottom:3px;
+  padding-bottom:2px;*/
+}
+
+h5 {
+  margin-top:5px;
+  font-weight:lighter;
+  text-align:center;
+  font-size:16px;
+}
+
 header {
   margin-top: 75px;
 }
@@ -174,11 +211,29 @@ div.circlist li {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    width: 28%;
+    width: 29%;
+    vertical-align:top;
     padding-left:2%;
     padding-right: 2%;
     padding-bottom: 5%;
     padding-top: 5%;
+}
+
+div.circlist2 li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 32%;
+    vertical-align:top;
+    padding-left:0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+div.reglist {
+    list-style: none;
 }
 
 footer {
