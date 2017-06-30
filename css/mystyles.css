@@ -134,9 +134,28 @@ h3 {
   padding-bottom:0px;
 }
 
+div.reglist2 h3 {
+    margin:8px;
+}
+
+div.reglist2 h4 {
+    margin:8px;
+}
+
+div.reglist2 h5 {
+    margin:8px;
+}
+
 div.reglist li {
     padding-bottom:10px;
+    display:inline-block;
 }
+
+div.reglist2 li {
+    list-style: none;
+    margin:40px;
+}
+
 
 /*div.reglist h3, div.reglist h4, div.reglist h5 {
   text-align:left;
