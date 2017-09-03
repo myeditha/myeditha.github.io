@@ -148,7 +148,7 @@ div.reglist2 h5 {
 
 div.reglist li {
     padding-bottom:10px;
-    display:inline-block;
+    display:block;
 }
 
 div.reglist2 li {
