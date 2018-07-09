@@ -345,7 +345,7 @@ footer {
 
 @keyframes pulse {
     0%,100%{
-        color: #b3b3b3;
+        color: #fff;
     }
     50% {
         color: #000000;
@@ -358,10 +358,10 @@ footer {
         color: #000000;
     }
     15% {
-        color: #b3b3b3;
+        color: #fff;
     }
     75%{
-        color: #b3b3b3;
+        color: #fff;
     }
 
 }
@@ -371,10 +371,10 @@ footer {
         color: #000000;
     }
     40% {
-        color: #b3b3b3;
+        color: #fff;
     }
     75%{
-        color: #b3b3b3;
+        color: #fff;
     }
 
 }
@@ -384,10 +384,10 @@ footer {
         color: #000000;
     }
     65% {
-        color: #b3b3b3;
+        color: #fff;
     }
     75%{
-        color: #b3b3b3;
+        color: #fff;
     }
 
 }
