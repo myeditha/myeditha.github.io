@@ -1,7 +1,7 @@
 
 
 div.background1 {
-	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("rubybeach.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
@@ -86,7 +86,7 @@ div.navbar li a.active {
 } */
 
 body{
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     color:#fff;
     font-size: 15px;
     font-weight: lighter;
