@@ -92,12 +92,14 @@ body{
 }
 
 .webheader {
+    padding-top:25vh;
     min-height: 100vh;
     text-align:center;
 }
 
 .webheader p {
-    padding:2vh;
+    padding:0vh;
+    margin:0vh;
 }
 
 li {

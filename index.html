@@ -19,7 +19,7 @@ redirect_from: "mehereshy.github.io"
 </head>
 
 <body>
-	<div id = "stickyheader" class = "navbar">
+	<div id = "stickyheader" class = "navbar" style = "display:none;">
 		<ul>
 
 			<li class = "active"><a href = "#home">Home</a></li>
@@ -34,14 +34,9 @@ redirect_from: "mehereshy.github.io"
 <div class = "bodywrapper">
 
 	<header>
-		<div class = "webheader">
-			<p></p>
+		<div class = "webheader" id = "webheader">
 			<h1>Meheresh Yeditha</h1>
-			<h2>Coding & Project Blog</h2>
 
-			<div>
-				<img class = "img-circle" src = "img/bg.jpg" width = 30% height = 0%>
-			</div>
 			<div id = "blog" class = "choice">
 			<h2><a href = "#coder" style = "animation: pulse1 4s infinite;" onclick = "toggledivs('coder');return false;">Coder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;" style = "animation: pulse2 4s infinite;"> Musician</a> • <a href = "#sophophile" style = "animation: pulse3 4s infinite;" onclick = "toggledivs('sophophile');return false;">Other Stuff</a></h2>
 			</div>
@@ -212,6 +207,10 @@ redirect_from: "mehereshy.github.io"
 	<script>
 	function toggledivs(divid) {
 		console.log(divid);
+		var header = document.getElementById("stickyheader");
+		
+		header.style.display = 'block';
+		
 		var x = document.getElementById(divid);
 		var x1 = document.getElementById(divid + "1");
 		var x2 = document.getElementById(divid + "2");
@@ -264,7 +263,8 @@ redirect_from: "mehereshy.github.io"
 	    	z.style.display = 'none';
 	    	z1.style.display = 'none';
 	        z2.style.display = 'none';
-	    }
+		}
+		
 	}
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -282,10 +282,13 @@ redirect_from: "mehereshy.github.io"
 	    //Animate
 	    $('html, body').stop().animate({
 	        scrollTop: $( $(this).attr('href') ).offset().top - 160
-	    }, 400);
-	    return false;
+		}, 400);
+		document.getElementById("webheader").style["padding-top"] = "30vh";
+		return false;
+		
 	  });
 	  $('.scrollTop a').scrollTop();
+	  
 	}
 	scrollNav();
 	</script>
