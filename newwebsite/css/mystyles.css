@@ -36,6 +36,13 @@ div.background6 {
 	background-attachment:fixed;
 }
 
+#overlay {
+    margin: 0 auto;
+    text-align:center;
+    float: none;
+    padding-top:30vh;
+}
+
 a:hover {
     color: #DCDCDC;
 

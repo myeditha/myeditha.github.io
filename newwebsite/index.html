@@ -19,7 +19,12 @@ redirect_from: "mehereshy.github.io"
 </head>
 
 <body>
-<div class = "background1">
+<div id="overlay">
+		<img src="css/loading.gif" alt="Loading" />
+		Loading...
+	</div>
+
+<div class = "background1" style = "display:none;">
 	<!-- <div id = "stickyheader" class = "navbar">
 		<ul>
 
@@ -300,7 +305,8 @@ redirect_from: "mehereshy.github.io"
 		$this.css({ backgroundPosition: bgPosition });
 		});
 	});
-    
+    $('div.background' + rand).css("display", "block");
+	$('#overlay').css("display", "none");
 });
 
   </script>
