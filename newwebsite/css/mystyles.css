@@ -6,6 +6,35 @@ div.background1 {
 	background-attachment:fixed;
 }
 
+div.background2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rainier.jpg");
+	background-position: center top;
+	background-attachment:fixed;
+}
+
+div.background3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("hamershlag.jpg");
+	background-position: center top;
+	background-attachment:fixed;
+}
+
+div.background4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("seattle.jpg");
+	background-position: center top;
+	background-attachment:fixed;
+}
+
+div.background5 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("sf.jpg");
+	background-position: center top;
+	background-attachment:fixed;
+}
+
+div.background6 {
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("cmu.jpg");
+	background-position: center top;
+	background-attachment:fixed;
+}
 
 a:hover {
     color: #DCDCDC;
@@ -43,7 +72,7 @@ img {
 }
 
 .bodywrapper a {
-    animation: pulse 1.5s infinite;
+    animation: pulse 3s infinite;
 }
 /* 
 div.navbar {
@@ -89,7 +118,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     color:#fff;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: normal;
     padding: 0;
     margin: 0 auto;
 }
@@ -127,7 +156,7 @@ li {
 h1 {
     /* margin:0px; */
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 40px;
 }
 
@@ -135,7 +164,7 @@ h2{
     /* margin:0px; */
     text-align: center;
     font-size:25px;
-        font-weight: lighter;
+        font-weight: normal;
 }
 
 h3 {
@@ -144,7 +173,7 @@ h3 {
   text-align: center;
   font-size: 18px;
   padding-bottom: 20px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 #experience h3, #about h3 {
@@ -188,7 +217,7 @@ div.reglist2 li {
 h4 {
   /*margin-top:4px;*/
   font-size:14px;
-  font-weight:lighter;
+  font-weight:normal;
   text-align:center;
   color: #DCDCDC;
   text-transform: uppercase;
@@ -198,7 +227,7 @@ h4 {
 
 h5 {
   margin-top:5px;
-  font-weight:lighter;
+  font-weight:normal;
   text-align:center;
   font-size:16px;
 }
@@ -348,14 +377,14 @@ footer {
         color: #fff;
     }
     50% {
-        color: #000000;
+        color: #595959;
     }
 
 }
 
 @keyframes pulse1 {
     0%,100%{
-        color: #000000;
+        color: #595959;
     }
     15% {
         color: #fff;
@@ -368,7 +397,7 @@ footer {
 
 @keyframes pulse2 {
     0%,100%{
-        color: #000000;
+        color: #595959;
     }
     40% {
         color: #fff;
@@ -381,7 +410,7 @@ footer {
 
 @keyframes pulse3 {
     0%,100%{
-        color: #000000;
+        color: #808080;
     }
     65% {
         color: #fff;

@@ -204,6 +204,7 @@ redirect_from: "mehereshy.github.io"
 	<br> myeditha@andrew.cmu.edu
 </footer>
 </div>
+	
 	<script>
 	function toggledivs(divid) {
 		console.log(divid);
@@ -263,8 +264,8 @@ redirect_from: "mehereshy.github.io"
 	}
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 	<script>
-	// https://twitter.com/mattsince87
 
 	function scrollNav() {
 	  $('a').click(function(){  
@@ -287,16 +288,19 @@ redirect_from: "mehereshy.github.io"
   <script>
   $(document).ready(function(){
     var $win = $(window);
-
-    $('div.background1').each(function(){
-        var scroll_speed = 20;
-        var $this = $(this);
-        $(window).scroll(function() {
-            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
-            var bgPosition = 'center '+ bgScroll + 'px';
-            $this.css({ backgroundPosition: bgPosition });
-        });
-    });
+	var rand = Math.floor(Math.random() * 5) + 1;
+	$(".background1").toggleClass("background1 background" + rand);
+		
+	$('div.background' + rand).each(function(){
+	var scroll_speed = 20;
+	var $this = $(this);
+	$(window).scroll(function() {
+		var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
+		var bgPosition = 'center '+ bgScroll + 'px';
+		$this.css({ backgroundPosition: bgPosition });
+		});
+	});
+    
 });
 
   </script>
