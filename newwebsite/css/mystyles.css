@@ -336,6 +336,29 @@ footer {
         max-width:80%;
     }
 
+    .background1 {
+        background-size:cover;
+    }
+
+    .background2 {
+        background-size:cover;
+    }
+
+    .background3 {
+        background-size:cover;
+    }
+
+    .background4 {
+        background-size:cover;
+    }
+    .background5 {
+        background-size:cover;
+    }
+
+    .background6 {
+        background-size:cover;
+    }
+
     .background1:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
         background-attachment:fixed;
