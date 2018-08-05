@@ -336,29 +336,6 @@ footer {
         max-width:80%;
     }
 
-    .background1 {
-        background-position: center center;
-    }
-
-    .background2 {
-        background-position: center center;
-    }
-
-    .background3 {
-        background-position: center center;
-    }
-
-    .background4 {
-        background-position: center center;
-    }
-    .background5 {
-        background-position: center center;
-    }
-
-    .background6 {
-        background-position: center center;
-    }
-
     .background1:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
         background-attachment:fixed;
