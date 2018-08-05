@@ -1,36 +1,36 @@
 
 
-div.background1 {
+.background1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
 
-div.background2 {
+.background2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rainier.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
 
-div.background3 {
+.background3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("hamershlag.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
 
-div.background4 {
+.background4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("seattle.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
 
-div.background5 {
+.background5 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("sf.jpg");
 	background-position: center top;
 	background-attachment:fixed;
 }
 
-div.background6 {
+.background6 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("cmu.jpg");
 	background-position: center top;
 	background-attachment:fixed;
@@ -336,7 +336,7 @@ footer {
         max-width:80%;
     }
 
-    div.background1 {
+    .background1 {
         background-size: cover;
         background-position:  center center;
         z-index: -20;
@@ -347,7 +347,7 @@ footer {
         -o-background-size: cover;
     }
 
-    div.background2 {
+    .background2 {
         background-size: cover;
         background-position: center center;
         z-index: -20;
@@ -358,7 +358,7 @@ footer {
         -o-background-size: cover;
     }
 
-    div.background3 {
+    .background3 {
         background-size: cover;
         background-position: center center;
         z-index: -20;
@@ -369,7 +369,7 @@ footer {
         -o-background-size: cover;
     }
 
-    div.background4 {
+    .background4 {
         background-size: cover;
         background-position: center center;
         z-index: -20;
@@ -380,7 +380,7 @@ footer {
         -o-background-size: cover;
     }
 
-    div.background5 {
+    .background5 {
         background-size: cover;
         background-position: center center;
         z-index: -10;
@@ -391,7 +391,7 @@ footer {
         -o-background-size: cover;
     }
 
-    div.background6 {
+    .background6 {
         background-size: cover;
         background-position: center center;
         z-index: -20;
