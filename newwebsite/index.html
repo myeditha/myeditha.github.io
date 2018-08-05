@@ -279,6 +279,15 @@ redirect_from: "mehereshy.github.io"
 		$this.css({ backgroundPosition: bgPosition });
 		});
 	});
+	$('body').bind('touchmove', function(e) { 
+		var scroll_speed = 20;
+		var $this = $(this);
+		$(window).scroll(function() {
+			var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
+			var bgPosition = 'center '+ bgScroll + 'px';
+			$this.css({ backgroundPosition: bgPosition });
+			});
+	});
 	$('#overlay').fadeOut(400,function(){$('div.background' + rand).fadeIn(400);}); 
     
 });
