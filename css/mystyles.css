@@ -217,6 +217,11 @@ div.reglist2 li {
     margin:40px;
 }
 
+div.description{
+    text-align:center;
+    display:none;
+}
+
 
 /*div.reglist h3, div.reglist h4, div.reglist h5 {
   text-align:left;

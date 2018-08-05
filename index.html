@@ -39,7 +39,7 @@ redirect_from: "mehereshy.github.io"
 		 <div style = "min-height:100vh; padding-top:40px;">
 			 <div>
 				 <h1 style = "padding-bottom:25px;">Welcome!</h1>
-				 <h3>My name is Meheresh Yeditha, and I am a junior at the Carnegie Mellon School of Computer Science. I have worked as a teaching assistant for Principles of Functional Programming (15-150)  and Parallel and Sequential Data Structures and Algorithms (15-210), and as a research assistant in the Carnegie Mellon Language Technologies Institute. My interests include language processing and design. </h3>
+				 <h3>My name is Meheresh Yeditha, and I am a senior at the Carnegie Mellon School of Computer Science. I have worked as a teaching assistant for Principles of Functional Programming (15-150)  and Parallel and Sequential Data Structures and Algorithms (15-210), and as a research assistant in the Carnegie Mellon Language Technologies Institute. My interests include language processing and design. </h3>
 				 <h3>On this page you'll find everything from descriptions of cool upcoming projects to past jobs and internship experiences. If you have any questions, feel free to <a href = "index.html#contact">contact</a> me!</h3>
 			 </div>
 		 </div>
@@ -58,27 +58,35 @@ redirect_from: "mehereshy.github.io"
 			 <h3>B.S. in CS</h3>
 			 <h4>Carnegie Mellon School of Computer Science</h4><h5>Class of 2019</h5>
 		 </li>
-		 <li>
+		 </h3>
+		 </div>
+		 <h1 style = "padding-top:75px;text-align:center;">Academic Experience</h1>
+		 <div id = "academicexperience" class = "circlist">
+			<br>
+			<h3>
+		 	<li id = "210t" class = "trigger">
+			 
 					 <img src = "img/210.png">
 					 <h3>
-				 TA, 15-210</h3><h4>Carnegie Mellon School of Computer Science</h4><h5>Fall 2017, Spring 2018, Fall 2018
+				TA, 15-210</h3><h4>Carnegie Mellon School of Computer Science</h4><h5>Fall 2017, Spring 2018, Fall 2018
 					 </h5>
 				 </li>
-				 <li>
+				 <li id = "150t" class = "trigger">
 					 <img src = "img/150.png">
 					 <h3>
-				 TA, 15-150</h3><h4>Carnegie Mellon School of Computer Science</h4><h5>Fall 2016, Spring 2017
+				TA, 15-150/h3><h4>Carnegie Mellon School of Computer Science</h4><h5>Fall 2016, Spring 2017
 					 </h5>
 				 </li>
-				 <li>
+				 <li id = "researcht" class = "trigger">
 					 <img src = "img/lti.png">
 					 <h3>
-				 Research Assistant</h3><h4>Carnegie Mellon Language Technologies Institute<h4><h5>Spring 2017, Fall 2017, Spring 2018</h5>
+					Research Assistant</h3><h4>Carnegie Mellon Language Technologies Institute<h4><h5>Spring 2017 - Present</h5>
 				 </li>
 				 </h3>
+			
 		 </div>
  
-		 <h1 style = "padding-top:75px;">Experience</h1>
+		 <h1 style = "padding-top:75px;">Industry Experience</h1>
 		 <div id = "experience" class = "circlist">
 				 <br>
 				 <h3>
@@ -92,10 +100,10 @@ redirect_from: "mehereshy.github.io"
 		 </li>
 		 <li><img src = "img/gigstreaminverted.png"><h3>Web Developer</h3><h4>Gigstream</h4><h5>June 2016&ndash;September 2016</h5>
 		 </li>
-		 <li><img src = "img/ardec.png"><h3>Software Development Intern</h3><h4>Picatinny Arsenal</h4><h5>March 2015&ndash;June 2015</h5>
+		 <!-- <li><img src = "img/ardec.png"><h3>Software Development Intern</h3><h4>Picatinny Arsenal</h4><h5>March 2015&ndash;June 2015</h5>
 		 </li>
 		 <li><img src = "img/npd.png"><h3>Intern</h3><h4>LGI Network (An NPD Company)</h4><h5>July 2014&ndash;August 2014</h5>
-		 </li>
+		 </li> -->
 		 </div>
  
 		 <div id = "portfolio">
@@ -141,7 +149,7 @@ redirect_from: "mehereshy.github.io"
 			 </li>
 			 <li><h3>This Website</h3><h4>September 2016&ndash;Present</h4>
 				 <h5>
-					 An experiment in minimalism and modernism. Designed carefully by hand to contrast with the Bootstrap-powered excesses of my <a href = "oldwebsite/index.html">old website</a>. 
+					 An experiment in minimalism and modernism. Designed carefully by hand to contrast with the Bootstrap-powered excesses of my <a href = "oldwebsite/index.html">old website</a>(s). Currently on iteration #4. 
 				 </h5>
 			 </li>
 			 </div>
@@ -296,8 +304,29 @@ redirect_from: "mehereshy.github.io"
  
    </script>
    <script>
- 
- 
+	function clickFunction(id1, id2)
+	{
+		$id = $('#' + id2).css("display");
+		$('div.description').each(function()
+		{
+			var $this = $(this);
+			$this.hide();
+		})
+		if($id == "none")
+		{
+			$('#' + id2).css("display", "block");
+		}
+		$('li.trigger').each(function()
+		{
+			var $this = $(this);
+			if($this.attr('id') !== id1)
+			{
+				$this.animate({filter: "grayscale(100%)"});
+			}
+		})
+		
+	}
+	
    </script>
  </body>
  
