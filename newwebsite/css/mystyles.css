@@ -337,26 +337,26 @@ footer {
     }
 
     .background1 {
-        background-size:cover;
+        background-position: center center;
     }
 
     .background2 {
-        background-size:cover;
+        background-position: center center;
     }
 
     .background3 {
-        background-size:cover;
+        background-position: center center;
     }
 
     .background4 {
-        background-size:cover;
+        background-position: center center;
     }
     .background5 {
-        background-size:cover;
+        background-position: center center;
     }
 
     .background6 {
-        background-size:cover;
+        background-position: center center;
     }
 
     .background1:before {
