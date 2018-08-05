@@ -12,6 +12,7 @@ redirect_from: "mehereshy.github.io"
 	 <title>Meheresh S. Yeditha</title>
 	 <link rel = "icon" href = "img/favicon.png">
 	 <link href="css/mystyles.css" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
  
  </head>
  
@@ -238,6 +239,7 @@ redirect_from: "mehereshy.github.io"
 		 }
 	 }
 	 </script>
+ 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  
 	 <script>
@@ -261,23 +263,36 @@ redirect_from: "mehereshy.github.io"
 	 </script>
  
    <script>
+ 
    $(document).ready(function(){
 	 var $win = $(window);
 	 var rand = Math.floor(Math.random() * 5) + 1;
-	 $(".background1").toggleClass("background1 background" + rand);
-		 
-	 $('div.background' + rand).each(function(){
-	 var scroll_speed = 20;
-	 var $this = $(this);
-	 $(window).scroll(function() {
-		 var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
-		 var bgPosition = 'center '+ bgScroll + 'px';
-		 $this.css({ backgroundPosition: bgPosition });
-		 });
-	 });
-	 $('#overlay').fadeOut(400,function(){$('div.background' + rand).fadeIn(400);}); 
 	 
- });
+	 if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) )
+	 {
+		 $(".background1").toggleClass("background1 background" + rand);
+		 console.log("detected non mobile platform");
+		 $('div.background' + rand).each(function(){
+		 var scroll_speed = 20;
+		 var $this = $(this);
+		 $(window).scroll(function() {
+			 var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
+			 var bgPosition = 'center '+ bgScroll + 'px';
+			 $this.css({ backgroundPosition: bgPosition });
+			 });
+		 });
+		 $('#overlay').fadeOut(400,function(){$('div.background' + rand).fadeIn(400);}); 
+	 }
+	 else {
+		 var cnt = $("#num").contents();
+		 $(document.body).addClass("background" + rand);
+		 $("#num").replaceWith(cnt);
+		 $('#overlay').fadeOut(400,function(){$(document.body).fadeIn(400);});
+		  
+	 }
+		 
+		 
+	 });
  
    </script>
    <script>
