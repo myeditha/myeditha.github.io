@@ -336,6 +336,42 @@ footer {
         max-width:80%;
     }
 
+    div.background1 {
+        background-size: cover;
+        background-position:  center center;
+        z-index: -10;
+    }
+
+    div.background2 {
+        background-size: cover;
+        background-position: center center;
+        z-index: -10;
+    }
+
+    div.background3 {
+        background-size: cover;
+        background-position: center center;
+        z-index: -10;
+    }
+
+    div.background4 {
+        background-size: cover;
+        background-position: center center;
+        z-index: -10;
+    }
+
+    div.background5 {
+        background-size: cover;
+        background-position: center center;
+        z-index: -10;
+    }
+
+    div.background6 {
+        background-size: cover;
+        background-position: center center;
+        z-index: -10;
+    }
+
     body{
         font-size: 10px;
         font-weight: lighter;
@@ -382,7 +418,6 @@ footer {
 }
 
 @media screen and (max-width:900px) and (min-width: 520px) {
-
 
     body{
         font-size: 10px;
