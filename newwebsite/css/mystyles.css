@@ -353,6 +353,16 @@ footer {
     div.webheader img {
         width:70%;
     }
+
+    .webheader div {
+        /* bottom:0; */
+        position:absolute;
+        text-align:center;
+        margin:0 auto;
+        left:0;
+        right:0;
+        top:25vh;
+    }
 }
 
 @media screen and (max-width:900px) and (min-width: 520px) {
