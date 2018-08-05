@@ -16,7 +16,7 @@ redirect_from: "mehereshy.github.io"
 
 </head>
 
-<body class = "background1">
+<body>
 <div id="overlay">
 		<img src="css/loading.gif" alt="Loading" />
 		Loading...
@@ -285,7 +285,7 @@ redirect_from: "mehereshy.github.io"
 	}
 	else {
 		var cnt = $("#num").contents();
-		// $(document.body).addClass("background" + rand);
+		$(document.body).addClass("background" + rand);
 		$("#num").replaceWith(cnt);
 		$('#overlay').fadeOut(400,function(){$(document.body).fadeIn(400);});
 		 
