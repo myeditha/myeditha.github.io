@@ -520,14 +520,14 @@ footer {
         color: #fff;
     }
     50% {
-        color: #808080;
+        color: #666666;
     }
 
 }
 
 @keyframes pulse1 {
     0%,100%{
-        color: #808080;
+        color: #666666;
     }
     15% {
         color: #fff;
@@ -540,7 +540,7 @@ footer {
 
 @keyframes pulse2 {
     0%,100%{
-        color: #808080;
+        color: #666666;
     }
     40% {
         color: #fff;
@@ -553,7 +553,7 @@ footer {
 
 @keyframes pulse3 {
     0%,100%{
-        color: #808080;
+        color: #666666;
     }
     65% {
         color: #fff;
