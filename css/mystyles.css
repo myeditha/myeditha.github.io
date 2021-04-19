@@ -343,7 +343,8 @@ footer {
 
     .background1:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
-        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position:  center center;
         z-index: -20;
@@ -356,7 +357,8 @@ footer {
 
     .background2:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("lake.jpg");
-        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center center;
         z-index: -20;
@@ -369,7 +371,8 @@ footer {
 
     .background3:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("hamershlag.jpg");
-        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center center;
         z-index: -20;
@@ -382,7 +385,8 @@ footer {
 
     .background4:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("seattle.jpg");
-        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center center;
         z-index: -20;
@@ -395,7 +399,8 @@ footer {
 
     .background5:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("sf.jpg");
-        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center center;
         z-index: -10;
@@ -408,7 +413,8 @@ footer {
 
     .background6:before {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("cmu.jpg");
-        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center center;
         z-index: -20;
