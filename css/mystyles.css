@@ -2,37 +2,55 @@
 
 .background1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
+    width: 100vw;
 	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 }
 
 .background2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("lake.jpg");
+    width: 100vw;
 	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 }
 
 .background3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("hamershlag.jpg");
+    width: 100vw;
 	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 }
 
 .background4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("seattle.jpg");
+    width: 100vw;
 	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 }
 
 .background5 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("sf.jpg");
+    width: 100vw;
 	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 }
 
 .background6 {
 	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("cmu.jpg");
+    width: 100vw;
 	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
 }
 
@@ -336,150 +354,7 @@ footer {
 
 }
 
-@media screen and (max-width:520px) {
-    .bodywrapper {
-        max-width:80%;
-    }
-
-    .background1:before {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("rubybeach.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position:  center center;
-        z-index: -20;
-        width: 100%;
-        height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    .background2:before {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("lake.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        z-index: -20;
-        width: 100%;
-        height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    .background3:before {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("hamershlag.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        z-index: -20;
-        width: 100%;
-        height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    .background4:before {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("seattle.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        z-index: -20;
-        width: 100%;
-        height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    .background5:before {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("sf.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        z-index: -10;
-        width: 100%;
-        height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    .background6:before {
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("cmu.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        z-index: -20;
-        width: 100%;
-        height: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    body{
-        font-size: 10px;
-        font-weight: lighter;
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    h1 {
-        font-size:30px;
-    }
-
-    h2 {
-        font-size:20px;
-    }
-
-    h3 {
-        font-size:15px;
-    }
-
-    div.circlist li {
-        display: inline-block;
-        text-align: center;
-        margin: 0 auto;
-        width: 80%;
-        padding-bottom: 5%;
-        padding-top: 5%;
-    }
-        div.circlist {
-        padding-left: 0%;
-        width:80%;
-        text-align:center;
-        margin: 0 auto;
-    }
-    div.webheader img {
-        width:70%;
-    }
-
-    img {
-        max-width:80%;
-    }
-
-    #overlay img {
-        width: 30%;
-        height:30%;
-        margin-left:15%;
-    }
-
-    .webheader div 
-    {
-        top:30vh;
-    }
-    
-}
-
-@media screen and (max-width:900px) and (min-width: 520px) {
+@media screen and (max-width:900px){
 
     body{
         font-size: 10px;

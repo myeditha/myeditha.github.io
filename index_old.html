@@ -31,7 +31,7 @@ redirect_from: "mehereshy.github.io"
 		 <div class = "webheader" id = "webheader">
 			 <div id = "blog" class = "choice">
 			 <h1>Meheresh Yeditha</h1>
-			 <h2><a href = "#coder" style = "animation: pulse1 4s infinite;" onclick = "toggledivs('coder');return false;">Builder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;" style = "animation: pulse2 4s infinite;"> Writer</a> • <a href = "#sophophile" style = "animation: pulse3 4s infinite;" onclick = "toggledivs('sophophile');return false;">Bookshelf</a></h2>
+			 <h2><a href = "#coder" style = "animation: pulse1 4s infinite;" onclick = "toggledivs('coder');return false;">Coder</a> • <a href = "#musician" onclick = "toggledivs('musician');return false;" style = "animation: pulse2 4s infinite;"> Musician</a> • <a href = "#sophophile" style = "animation: pulse3 4s infinite;" onclick = "toggledivs('sophophile');return false;">Bookshelf</a></h2>
 			 </div>
 		 </div>
 	 </header>
@@ -287,112 +287,10 @@ redirect_from: "mehereshy.github.io"
 		 $(".background1").toggleClass("background1 background" + rand);
 		 console.log("detected non mobile platform");
 		 $('div.background' + rand).each(function(){
+		 var scroll_speed = 20;
 		 var $this = $(this);
-		 // maxDrift is how far (in px) the background can move before its
-		 // edge would be exposed. It only depends on the image + viewport,
-		 // so it's cached from computeImageBounds() and only changes on resize.
-		 var maxDrift = 0;
-		 // Plain "cover" scaling often leaves zero spare height (e.g. a wide
-		 // photo on a wide monitor renders at exactly viewport height), which
-		 // leaves no room to drift and kills the parallax. Zoom in a bit past
-		 // cover so there's always excess height to scroll the background
-		 // through, top to bottom, without ever exposing an edge.
-		 var ZOOM = 1.15;
-		 // The page's scrollable length changes a lot depending on which
-		 // of #coder/#musician/#sophophile is toggled open, and only one
-		 // is ever open at a time. Rather than reading live document
-		 // height (which makes the drift *rate* jump every time a
-		 // different-length section opens -- jarring), measure the
-		 // tallest of those sections once and use that as a fixed
-		 // reference, so the background always drifts at the same rate
-		 // no matter which section is showing. A shorter section just
-		 // won't use the full drift range, which is fine.
-		 var maxDocHeight = 0;
-
-		 function computeMaxDocHeight() {
-			 // $this (the page-spanning background wrapper) starts life as
-			 // display:none and is only revealed later by the #overlay
-			 // fadeOut -> fadeIn callback chain, which runs on its own timer
-			 // unrelated to window 'load'. If this measurement ever runs
-			 // before that chain finishes, $this (and everything inside it,
-			 // sections included) is still display:none, collapsing the
-			 // whole page to ~0 height regardless of the sections' own
-			 // display values. Force it visible for the measurement too, so
-			 // this is correct no matter when it's called.
-			 var thisEl = $this[0];
-			 var thisOriginalDisplay = thisEl.style.display;
-			 var thisWasHidden = getComputedStyle(thisEl).display === 'none';
-			 if (thisWasHidden) { thisEl.style.display = 'block'; }
-
-			 var ids = ['coder', 'musician', 'sophophile'];
-			 var original = {};
-			 ids.forEach(function (id) {
-				 var el = document.getElementById(id);
-				 original[id] = el ? el.style.display : null;
-			 });
-			 var max = 0;
-			 ids.forEach(function (id) {
-				 ids.forEach(function (other) {
-					 var el = document.getElementById(other);
-					 if (el) { el.style.display = (other === id) ? 'block' : 'none'; }
-				 });
-				 max = Math.max(max, $(document).height());
-			 });
-			 ids.forEach(function (id) {
-				 var el = document.getElementById(id);
-				 if (el) { el.style.display = original[id]; }
-			 });
-
-			 if (thisWasHidden) { thisEl.style.display = thisOriginalDisplay; }
-			 return max;
-		 }
-
-		 function computeImageBounds() {
-			 var viewportW = $win.width();
-			 var viewportH = $win.height();
-			 var urls = ($this.css('background-image') || '').match(/url\(["']?([^"')]+)["']?\)/g);
-			 var lastUrl = urls && urls[urls.length - 1];
-			 var src = lastUrl && lastUrl.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-			 if (!src) { return; }
-			 var img = new Image();
-			 img.onload = function () {
-				 // How tall the image renders once zoomed past cover scale.
-				 var scale = Math.max(viewportW / img.naturalWidth, viewportH / img.naturalHeight) * ZOOM;
-				 var renderedW = img.naturalWidth * scale;
-				 var renderedH = img.naturalHeight * scale;
-				 $this.css('backgroundSize', renderedW + 'px ' + renderedH + 'px');
-				 // Extra height beyond the viewport -- the only room the image
-				 // has to drift in before its edge would be exposed.
-				 maxDrift = Math.max(0, renderedH - viewportH);
-			 };
-			 img.src = src;
-		 }
-
-		 computeImageBounds();
-		 $win.on('resize', computeImageBounds);
-
-		 // computeMaxDocHeight() measures real content height (including any
-		 // images inside the sections), so it has to wait for the window's
-		 // load event -- calling it any earlier (e.g. at document ready)
-		 // catches those images before they've loaded, when their containers
-		 // still report near-zero height, which undercounts maxDocHeight and
-		 // kills the drift range.
-		 $(window).on('load', function () {
-			 maxDocHeight = computeMaxDocHeight();
-		 });
-		 $win.on('resize', function () {
-			 maxDocHeight = computeMaxDocHeight();
-		 });
-
 		 $(window).scroll(function() {
-			 if (maxDrift <= 0 || maxDocHeight <= 0) { return; }
-			 // How far down the page we are, 0 (top) to 1 (bottom), against
-			 // the fixed maxDocHeight reference (not live document height --
-			 // see computeMaxDocHeight above for why).
-			 var maxScroll = Math.max(0, maxDocHeight - $win.height() - $this.offset().top);
-			 var scrolled = $win.scrollTop() - $this.offset().top;
-			 var fraction = maxScroll > 0 ? Math.max(0, Math.min(1, scrolled / maxScroll)) : 0;
-			 var bgScroll = -fraction * maxDrift;
+			 var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed);
 			 var bgPosition = 'center '+ bgScroll + 'px';
 			 $this.css({ backgroundPosition: bgPosition });
 			 });
